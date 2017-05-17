@@ -20,7 +20,7 @@
 ## General Syntax
 
 ```
-TM-<type>[_<lab-name>[-<lab-no>]][_<codename>]_<kind>[_<framework>][_<lang>][_PART]
+TM-<type>[_<lab-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][_PART]
 ```
 
 > Note: `[YYYY-MM][<status>]` are only parts of local repository name and are optional
@@ -76,6 +76,7 @@ TM-<type>[_<lab-name>[-<lab-no>]][_<codename>]_<kind>[_<framework>][_<lang>][_PA
 * PYT - Python 3
 * HTM - HTML
 * ASM - Assembly
+* MDW - Markdown
 
 ## PART
 
