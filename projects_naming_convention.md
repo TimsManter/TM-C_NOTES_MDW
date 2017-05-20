@@ -77,6 +77,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * HTM - HTML
 * ASM - Assembly
 * MDW - Markdown
+* GML - GameMaker Language
 
 ## PART
 
