@@ -1,6 +1,6 @@
 # My private set of notes based on various documentations and guides
 
-## Languages
+## Language
 
 - [C#](c_sharp.md)
 - [Emmet](emmet.md)
@@ -11,7 +11,7 @@
 - [TypeScript](typescript.md)
 - [Vala](vala.md)
 
-## Frameworks
+## Framework
 
 - [Angular 2](angular2.md)
 - [Symfony 2/3](symfony3.md)
