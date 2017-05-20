@@ -28,5 +28,5 @@
 
 - [Atmel AVR Registers](atmel_avr_registers.md)
 - [Data Dictionary](data_dictionary.md)
-- [Language Comparison Table](languages_comparison.md)
-- [Projects Naming Convention](projects_convention.md)
+- [Language Comparison](languages_comparison.md)
+- [Projects Convention](projects_convention.md)
