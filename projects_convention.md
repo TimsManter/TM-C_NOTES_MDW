@@ -93,7 +93,9 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
 * @CreateDate: 2017-01
-* @DeprecateDate: 2017-01
+* @AbandonDate: 2017-01
+* @Language: GML
+* @Framework: GameMaker: Studio
 * @License: GPLv3|MIT
-* @Status: Dev|Alpha|Beta|Stable|Deprecated|Sample
+* @Status: [Dev|Alpha|Beta|Stable] | Abandoned | Sample
 ```
