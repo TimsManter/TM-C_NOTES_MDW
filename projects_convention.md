@@ -3,38 +3,41 @@
 ## Overview
 
 * @Author: TimsManter
+* @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
+* @CreationDate: 2016-01
+* @BasedOn: [Documentation][basedon]
+
+[basedon]: http://example.com/
 
 <!-- TOC -->
 
 - [Overview](#overview)
-- [General Syntax](#general-syntax)
-- [Type](#type)
-- [Kind](#kind)
-- [Frameworks](#frameworks)
-- [Languages](#languages)
-- [PART](#part)
-- [Statuses](#statuses)
+- [Syntax](#syntax)
+  - [Type](#type)
+  - [Kind](#kind)
+  - [Frameworks](#frameworks)
+  - [Languages](#languages)
+  - [PART](#part)
+- [Template header](#template-header)
 
 <!-- /TOC -->
 
-## General Syntax
+## Syntax
 
 ```
 TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][_PART]
 ```
 
-> Note: `[YYYY-MM][<status>]` are only parts of local repository name and are optional
-
-## Type
+### Type
 
 * P - own project
-* S - study project
+* S - study/school project
 * F - forked project
 * C - container for files/data
 * O - other type of project
 * D - device (n/a)
 
-## Kind
+### Kind
 
 * WEB - website or web app
 * APP - desktop application
@@ -44,7 +47,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * MCR - microcontroller (other)
 * ELC - electronic (other)
 
-## Frameworks
+### Frameworks
 
 > Note: If used and only the main one
 
@@ -62,7 +65,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * TTG - TenTego
 * GMS - GameMaker: Studio
 
-## Languages
+### Languages
 
 > Note: The main one
 
@@ -80,13 +83,17 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * MDW - Markdown
 * GML - GameMaker Language
 
-## PART
+### PART
 
-> Note: Only if this is only one part of whole project; partial project
+> Note: Only if this is only one part of entire project; partial project
 
-## Statuses
+## Template header
 
-* [ACT]/[ACTIVE] - active and developing
-* [DEV] - developing; not public
-* [DEP]/[DEPRECATED] - deprecated; not developing
-* [SAMPLE]/_SAMPLE - sample
+```md
+* @Author: TimsManter
+* @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
+* @CreateDate: 2017-01
+* @DeprecateDate: 2017-01
+* @License: GPLv3|MIT
+* @Status: Dev|Alpha|Beta|Stable|Deprecated|Sample
+```
