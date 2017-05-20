@@ -11,11 +11,11 @@
 
 <!-- TOC -->
 
-1. [Overview](#overview)
-2. [Common](#common)
-3. [Backtrack](#backtrack)
-4. [Branches](#branches)
-5. [Teamwork](#teamwork)
+- [Overview](#overview)
+- [Common](#common)
+- [Backtrack](#backtrack)
+- [Branches](#branches)
+- [Teamwork](#teamwork)
 
 <!-- /TOC -->
 
@@ -26,6 +26,8 @@
 `git status` check modications of files.
 
 `git commit -m "Message"` commit files with message.
+
+`gir commit --amend` rewrite last commit message.
 
 `git diff` show differences.
 
