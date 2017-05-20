@@ -60,6 +60,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * ASP - ASP.NET
 * UWP - Universal Windows Platform
 * TTG - TenTego
+* GMS - GameMaker: Studio
 
 ##Languages
 
