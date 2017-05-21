@@ -3,9 +3,6 @@
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
 * @CreationDate: 2016-01
-* @BasedOn: [Documentation][basedon]
-
-[basedon]: http://example.com/
 
 ## Overview
 
