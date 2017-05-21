@@ -59,6 +59,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * VUE - Vue.js
 * JQR - jQuery
 * NET - .NET Framework
+* MON - Mono Framework
 * XAM - Xamarin
 * COR - .NET Core
 * ASC - ASP.NET Core
