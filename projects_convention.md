@@ -1,6 +1,4 @@
-# Projects Naming Convention
-
-## Overview
+# Projects Convention
 
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
@@ -8,6 +6,8 @@
 * @BasedOn: [Documentation][basedon]
 
 [basedon]: http://example.com/
+
+## Overview
 
 <!-- TOC -->
 
