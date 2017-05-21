@@ -41,7 +41,9 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 
 * WEB - website or web app
 * APP - desktop application
+* GAM - desktop game
 * MOB - mobile application
+* MOG - mogile game
 * MOV - movie or course
 * AVR - Atmel AVR microcontroller
 * MCR - microcontroller (other)
