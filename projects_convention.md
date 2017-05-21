@@ -97,6 +97,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
 * @CreateDate: 2017-01
 * @AbandonDate: 2017-01
+* @Editor: Visual Studio Code
 * @Language: GML
 * @Framework: GameMaker: Studio
 * @Locale: en_US | pl_PL
