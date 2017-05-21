@@ -100,6 +100,8 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * @Language: GML
 * @Framework: GameMaker: Studio
 * @Locale: en_US | pl_PL
+* @Documentation: [DOCX](docs/)
+* @DocumentationPL: [DOCX](docs/)
 * @License: GPLv3|MIT
 * @Status: [Dev|Alpha|Beta|Stable] | Abandoned | Sample
 ```
