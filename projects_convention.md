@@ -98,6 +98,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * @AbandonDate: 2017-01
 * @Language: GML
 * @Framework: GameMaker: Studio
+* @Locale: en_US | pl_PL
 * @License: GPLv3|MIT
 * @Status: [Dev|Alpha|Beta|Stable] | Abandoned | Sample
 ```
