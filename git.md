@@ -16,6 +16,7 @@
 - [Backtrack](#backtrack)
 - [Branches](#branches)
 - [Teamwork](#teamwork)
+- [Bare repository](#bare-repository)
 
 <!-- /TOC -->
 
@@ -67,3 +68,11 @@
 `git remote add upstream <remote_repo_address>` add upstream address.
 
 `git fetch upstream` download changes of original upstream repo.
+
+## Bare repository
+
+> NOTE: Useful for dot files.
+
+`git --bare init` init bare repository.
+
+`git --git-dir="$HOME/.cfg" --work-tree="$HOME" <command>` using bare repository.
