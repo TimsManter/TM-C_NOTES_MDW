@@ -11,10 +11,11 @@
 
 <!-- TOC -->
 
-1. [Overview](#overview)
-2. [Overview](#overview-1)
-3. [Applying changes](#applying-changes)
-4. [Aquiring informations](#aquiring-informations)
+- [Overview](#overview)
+- [Overview](#overview-1)
+- [Commands](#commands)
+- [Applying changes](#applying-changes)
+- [Aquiring informations](#aquiring-informations)
 
 <!-- /TOC -->
 
@@ -26,19 +27,19 @@
 > Note: If `n` is below 0 then conting starts from end.
 > Parts in `()` are optional.
 
-```
-uci {add|show|get|set|delete|add_list|delete_list|changes|commit|...}
-      ^    ^   ^   ^    ^       ^           ^        ^      ^
-      |    |   |   |    |       |           |        |      ` commit changes
-      |    |   |   |    |       |           |        ` show uncommited changes
-      |    |   |   |    |       |           ` delete position from list
-      |    |   |   |    |       ` add position to list
-      |    |   |   |    ` delete key
-      |    |   |   ` set key=value
-      |    |   ` get value of key
-      |    ` show all|subsystem|section|option
-      ` add key=value
-```
+## Commands
+
+uci ...     | Description
+------------|:-----------
+add         | add key=value
+show        | show all|subsystem|section|option
+get         | get value of key
+set         | set key=value
+delete      | delete key
+add_list    | add position to list
+delete_list | delete position from list
+changes     | show uncommited changes
+commit      | commit changes
 
 ## Applying changes
 
