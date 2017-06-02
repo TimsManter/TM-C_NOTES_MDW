@@ -46,8 +46,8 @@
   - [Validation](#validation)
     - [Possible types](#possible-types)
   - [Dynamic components](#dynamic-components)
-- [TypeScript Class Component](#typescript-class-component)
-- [TypeScript support](#typescript-support)
+- [TypeScript](#typescript)
+  - [Class Component](#class-component)
   - [Refs](#refs)
 
 <!-- /TOC -->
@@ -490,7 +490,11 @@ var vm = new Vue({
 })
 ```
 
-## TypeScript Class Component
+## TypeScript
+
+> Note: Vue.js already has TypeScript support.
+
+### Class Component
 
 > Note: Needs `vue-class-component` and optionally `vue-typescript-import-dts`.
 
@@ -535,10 +539,6 @@ export default class App extends Vue {
 }
 </script>
 ```
-
-## TypeScript support
-
-> Note: Vue.js already has TypeScript support.
 
 ### Refs
 
