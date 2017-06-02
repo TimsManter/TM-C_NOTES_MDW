@@ -47,6 +47,8 @@
     - [Possible types](#possible-types)
   - [Dynamic components](#dynamic-components)
 - [TypeScript Class Component](#typescript-class-component)
+- [TypeScript support](#typescript-support)
+  - [Refs](#refs)
 
 <!-- /TOC -->
 
@@ -532,4 +534,29 @@ export default class App extends Vue {
   }
 }
 </script>
+```
+
+## TypeScript support
+
+> Note: Vue.js already has TypeScript support.
+
+### Refs
+
+```ts
+// <some-component ref="myComp"></some-components>
+// <some-component ref="myOtherComp"></some-components>
+
+import SomeComponent from 'some-component'
+
+export defaulr class App extends Vue {
+  $refs = {
+    myComp: SomeComponent
+  }
+  
+  // by anonymous object
+  myVar: SomeComponent = this.$refs.myComp
+
+  // by `any` type
+  myOtherVar: SomeComponent = (this.$refs as any).myComp
+}
 ```
