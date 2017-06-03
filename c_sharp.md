@@ -3,9 +3,9 @@
 ## Overview
 
 * @Author: TimsManter
-@AuthorSite: [TimsManter.NET](http://timsmanter.net/)
-@CreationDate: 2017-01-30
-@BasedOn: [MSDN][basedon]
+* @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
+* @CreationDate: 2017-01-30
+* @BasedOn: [MSDN][basedon]
 
 [basedon]: http://msdn.microsoft.com/
 
@@ -27,7 +27,9 @@ lst.RemoveAt(1);
 
 Dictionaries
 ------------
+
 > TODO: Complete section
+
 ```csharp
 
 ```
