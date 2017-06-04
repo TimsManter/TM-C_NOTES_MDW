@@ -40,6 +40,10 @@
     - [Modifiers](#modifiers)
   - [Fields](#fields)
 - [Filters](#filters)
+- [Events](#events-1)
+  - [Register via attribute](#register-via-attribute)
+  - [Register via function](#register-via-function)
+  - [Emit](#emit)
 - [Components](#components)
   - [Local components](#local-components)
   - [`is` keyword](#is-keyword)
@@ -366,6 +370,27 @@ new Vue({
     }
   }
 });
+```
+
+## Events
+
+### Register via attribute
+```html
+<custom-component @customEvent="customHandler()"></custom-component>
+<!-- or -->
+<custom-component v-on:customEvent="customHandler()"></custom-component>
+```
+### Register via function
+```js
+this.$on('customEvent', function() {
+  // event instructions
+});
+```
+
+### Emit
+```ts
+// inside `customComponent`
+this.$emit('customEvent');
 ```
 
 ## Components
