@@ -11,8 +11,11 @@
 
 > TODO: Add basic syntax
 
-Lists
------
+# Collections
+
+> Namespace: `System.Collections.Gemeric`
+
+## List
 
 ```csharp
 List<string> lst = new List<string>();
@@ -25,8 +28,7 @@ lst.Remove("heh");
 lst.RemoveAt(1);
 ```
 
-Dictionaries
-------------
+## Dictionary
 
 > TODO: Complete section
 
