@@ -1,4 +1,4 @@
-# C#
+# C# / .NET Core
 
 ## Overview
 
