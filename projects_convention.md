@@ -93,13 +93,12 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
 * @CreateDate: 2017-01
-* @AbandonDate: 2017-01
+* @ObsoleteDate: 2017-01
 * @Editor: Visual Studio Code
-* @Language: GML
-* @Framework: GameMaker: Studio
+* @Language: C#
+* @Framework: .NET Core
 * @Locale: en_US | pl_PL
-* @Documentation: [DOCX](docs/)
-* @DocumentationPL: [DOCX](docs/)
-* @License: GPLv3|MIT
-* @Status: [Dev|Alpha|Beta|Stable] | Abandoned | Sample
+* @Documentation: [Polish](docs/)
+* @License: [GPLv3|MIT]
+* @Status: [Dev|Alpha|Beta|Stable] | Obsolete | Sample
 ```
