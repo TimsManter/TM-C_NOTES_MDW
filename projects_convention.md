@@ -99,6 +99,6 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * @Framework: .NET Core
 * @Locale: en_US | pl_PL
 * @Documentation: [Polish](docs/)
-* @License: [GPLv3|MIT]
+* @License: [GPLv3|MIT](LICENSE.md)
 * @Status: [Dev|Alpha|Beta|Stable] | Obsolete | Sample
 ```
