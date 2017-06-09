@@ -52,6 +52,7 @@
   - [Dynamic components](#dynamic-components)
 - [TypeScript](#typescript)
   - [Class Component](#class-component)
+    - [Scoped style](#scoped-style)
   - [Refs](#refs)
 
 <!-- /TOC -->
@@ -562,6 +563,16 @@ export default class App extends Vue {
     alert('greeting: ' + this.msg)
   }
 }
+</script>
+```
+
+#### Scoped style
+
+You can add `scoped` attribute to make style applied only to this specific type of component.
+
+```html
+<script scoped>
+...
 </script>
 ```
 
