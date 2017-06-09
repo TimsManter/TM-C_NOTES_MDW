@@ -20,7 +20,7 @@
   - [Check configuration](#check-configuration)
   - [Install dependencies](#install-dependencies)
   - [Update dependencies](#update-dependencies)
-- [Controler](#controler)
+- [Controller](#controller)
 - [Router](#router)
   - [Requirements](#requirements)
 
@@ -51,7 +51,7 @@
 ### Update dependencies
 `composer update`
 
-## Controler
+## Controller
 
 ```php
 // src/AppBundle/Controller/LuckyController.php
