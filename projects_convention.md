@@ -15,7 +15,7 @@
   - [Frameworks](#frameworks)
   - [Languages](#languages)
   - [PART](#part)
-- [Template header](#template-header)
+- [Template metadata](#template-metadata)
 
 <!-- /TOC -->
 
@@ -88,7 +88,9 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 
 > Note: Only if this is only one part of entire project; partial project
 
-## Template header
+## Template metadata
+
+> Note: Metadata is placed directly under main header.
 
 ```md
 * @Author: TimsManter
