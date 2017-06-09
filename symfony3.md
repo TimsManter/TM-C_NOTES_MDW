@@ -23,6 +23,8 @@
 - [Controller](#controller)
 - [Router](#router)
   - [Requirements](#requirements)
+- [Doctrine](#doctrine)
+  - [Types of data](#types-of-data)
 
 <!-- /TOC -->
 
@@ -101,3 +103,35 @@ public function showAction($slug) { } // additional parameter
 
 `@Method({"GET","HEAD"})` only GET or HEAD type of request
 `@Method("PUT")` only PUT type of request
+
+## Doctrine
+
+### Types of data
+
+Type | Size | PHP type | Description
+-----|------|----------|------------
+smallint|2B|integer|0 to 65535 or −32768 to 32767
+integer|4B|integer|0 to 4294967295 or −2147483648 to 2147483647
+bigint|8B|string|
+decimal||string|
+float||float/double|
+string||string|Limited length
+text||string|Unlimited length
+guid||string|"Globally Unique Identifier"
+binary||resource|Limited length
+blob||resource|Unlimited length
+boolean|1b|boolean|true or false
+date|date only|\DateTime|
+date_immutable|date only|\DateTimeImmutable|
+datetime|date & time|\DateTime
+datetime_immutable|date & time|\DateTimeImmutable|
+datetimetz|date, time, timezone|\DateTime|
+datetimetz_immutable|date, time, timezone|\DateTimeImmutable|
+time|time only|\DateTime|
+time_immutable|time only|\DateTimeImmutable|
+dateinterval|date & time difference|\DateInterval|
+array||array|serialization
+simple_array||array[string]|implode()/explode()
+json||array|json_decode()
+json_array||array|**deprecated**
+object||object|serialization
