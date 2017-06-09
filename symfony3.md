@@ -78,7 +78,7 @@ class LuckyController
 
 ## Router
 
-> Note: Annotations have to be in " quotes instead of ' ones.
+> Note: Annotations values have to be in " quotes instead of ' ones.
 
 ```php
 /**
