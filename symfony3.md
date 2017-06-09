@@ -131,7 +131,7 @@ time|time only|\DateTime|
 time_immutable|time only|\DateTimeImmutable|
 dateinterval|date & time difference|\DateInterval|
 array||array|serialization
-simple_array||array[string]|implode()/explode()
+simple_array||array[string]|implode()/explode() with comma delimeter
 json||array|json_decode()
 json_array||array|**deprecated**
 object||object|serialization
