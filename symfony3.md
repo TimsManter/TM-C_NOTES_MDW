@@ -13,7 +13,7 @@
 
 - [Overview](#overview)
 - [Intstallation](#intstallation)
-  - [Installer](#installer)
+  - [Symfony Installer](#symfony-installer)
   - [Composer](#composer)
 - [Setup](#setup)
   - [Internal server](#internal-server)
@@ -28,7 +28,7 @@
 
 ## Intstallation
 
-### Installer
+### Symfony Installer
 `symfony new project_name [2.8]`
 
 ### Composer
