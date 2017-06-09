@@ -11,18 +11,18 @@
 
 <!-- TOC -->
 
-1. [Overview](#overview)
-2. [Intstallation](#intstallation)
-  1. [Installer](#installer)
-  2. [Composer](#composer)
-3. [Setup](#setup)
-  1. [Internal server](#internal-server)
-  2. [Check configuration](#check-configuration)
-  3. [Install dependencies](#install-dependencies)
-  4. [Update dependencies](#update-dependencies)
-4. [Controler](#controler)
-5. [Router](#router)
-  1. [Requirements](#requirements)
+- [Overview](#overview)
+- [Intstallation](#intstallation)
+  - [Installer](#installer)
+  - [Composer](#composer)
+- [Setup](#setup)
+  - [Internal server](#internal-server)
+  - [Check configuration](#check-configuration)
+  - [Install dependencies](#install-dependencies)
+  - [Update dependencies](#update-dependencies)
+- [Controler](#controler)
+- [Router](#router)
+  - [Requirements](#requirements)
 
 <!-- /TOC -->
 
