@@ -96,6 +96,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
 * @CreateDate: 2017-01
+* @ReleaseDate: 2017-01
 * @ObsoleteDate: 2017-01
 * @Editor: Visual Studio Code
 * @Language: C#
