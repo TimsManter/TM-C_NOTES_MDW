@@ -92,6 +92,8 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 
 > Note: Metadata is placed directly under main header.
 
+> Note: Many values can be set with `|` delimeter but only one of `[..]` ones.
+
 ```md
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
