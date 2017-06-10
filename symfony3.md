@@ -1,7 +1,5 @@
 # Symfony3
 
-## Overview
-
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
 * @CreationDate: 2017-01
@@ -11,7 +9,6 @@
 
 <!-- TOC -->
 
-- [Overview](#overview)
 - [Intstallation](#intstallation)
   - [Symfony Installer](#symfony-installer)
   - [Composer](#composer)
