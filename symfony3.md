@@ -23,6 +23,8 @@
 - [Controller](#controller)
 - [Router](#router)
   - [Requirements](#requirements)
+  - [Redirect](#redirect)
+  - [JSON](#json)
 - [Doctrine](#doctrine)
   - [Types of data](#types-of-data)
 
@@ -105,6 +107,32 @@ public function showAction($slug) { } // additional parameter
 
 `@Method({"GET","HEAD"})` only GET or HEAD type of request
 `@Method("PUT")` only PUT type of request
+
+### Redirect
+
+```php
+// redirect to the "homepage" route
+return $this->redirectToRoute('homepage');
+
+// do a permanent - 301 redirect
+return $this->redirectToRoute('homepage', array(), 301);
+
+// redirect to a route with parameters
+return $this->redirectToRoute('blog_show', array('slug' => 'my-page'));
+
+// redirect externally
+return $this->redirect('http://symfony.com/doc');
+```
+
+### JSON
+
+```php
+// returns '{"username":"jane.doe"}' and sets the proper Content-Type header
+return $this->json(array('username' => 'jane.doe'));
+
+// the shortcut defines three optional arguments
+// return $this->json($data, $status = 200, $headers = array(), $context = array());
+```
 
 ## Doctrine
 
