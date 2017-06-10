@@ -66,17 +66,17 @@ use Symfony\Component\HttpFoundation\Response;
 
 class LuckyController extends Controller
 {
-    /**
-     * @Route("/lucky/number")
-     */
-    public function numberAction(Request $request)
-    {
-        $number = mt_rand(0, 100);
+  /**
+    * @Route("/lucky/number")
+    */
+  public function numberAction(Request $request)
+  {
+    $number = mt_rand(0, 100);
 
-        return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        );
-    }
+    return new Response(
+      '<html><body>Lucky number: '.$number.'</body></html>'
+    );
+  }
 }
 ```
 
@@ -86,17 +86,17 @@ class LuckyController extends Controller
 
 ```php
 /**
-    * Matches /blog exactly
-    *
-    * @Route("/blog", name="blog_list")
-    */
+  * Matches /blog exactly
+  *
+  * @Route("/blog", name="blog_list")
+  */
 public function listAction() { }
 
 /**
-    * Matches /blog/*
-    *
-    * @Route("/blog/{slug}", name="blog_show")
-    */
+  * Matches /blog/*
+  *
+  * @Route("/blog/{slug}", name="blog_show")
+  */
 public function showAction($slug) { } // additional parameter
 ```
 
