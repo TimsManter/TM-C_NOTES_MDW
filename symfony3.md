@@ -173,6 +173,8 @@ class Category
 }
 ```
 
+> Note: Don't forget to execute `./bin/console doctrine:generate:entities AppBundle` command.
+
 ### Types of data
 
 Type | Size | PHP type | Description
