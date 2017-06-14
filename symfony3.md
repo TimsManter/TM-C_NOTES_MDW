@@ -23,6 +23,9 @@
   - [Redirect](#redirect)
   - [JSON](#json)
 - [Doctrine](#doctrine)
+  - [Relations](#relations)
+    - [Many to one](#many-to-one)
+    - [One to many](#one-to-many)
   - [Types of data](#types-of-data)
 
 <!-- /TOC -->
@@ -132,6 +135,47 @@ return $this->json(array('username' => 'jane.doe'));
 ```
 
 ## Doctrine
+
+### Relations
+
+#### Many to one
+
+```php
+class Product
+{
+    // ...
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="products")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+     */
+    private $category;
+}
+```
+
+#### One to many
+
+```php
+// src/AppBundle/Entity/Category.php
+
+// ...
+use Doctrine\Common\Collections\ArrayCollection;
+
+class Category
+{
+    // ...
+
+    /**
+     * @ORM\OneToMany(targetEntity="Product", mappedBy="category")
+     */
+    private $products;
+
+    public function __construct()
+    {
+        $this->products = new ArrayCollection();
+    }
+}
+```
 
 ### Types of data
 
