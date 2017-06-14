@@ -141,10 +141,10 @@ return $this->json(array('username' => 'jane.doe'));
 #### Many to one
 
 ```php
+use Doctrine\ORM\Mapping as ORM;
+
 class Product
 {
-    // ...
-
     /**
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="products")
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
@@ -156,15 +156,11 @@ class Product
 #### One to many
 
 ```php
-// src/AppBundle/Entity/Category.php
-
-// ...
+use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
 class Category
 {
-    // ...
-
     /**
      * @ORM\OneToMany(targetEntity="Product", mappedBy="category")
      */
