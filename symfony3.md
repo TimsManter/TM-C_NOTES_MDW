@@ -26,6 +26,7 @@
   - [Relations](#relations)
     - [Many to one](#many-to-one)
     - [One to many](#one-to-many)
+    - [Many to Many](#many-to-many)
   - [Types of data](#types-of-data)
 
 <!-- /TOC -->
@@ -171,6 +172,30 @@ class Category
         $this->products = new ArrayCollection();
     }
 }
+```
+
+#### Many to Many
+
+```php
+<?php
+/**
+ * Owning Side
+ *
+ * @ManyToMany(targetEntity="Group", inversedBy="features")
+ * @JoinTable(name="user_groups",
+ *  joinColumns={@JoinColumn(name="user_id", referencedColumnName="id")},
+ *  inverseJoinColumns={@JoinColumn(name="group_id",
+ *    referencedColumnName="id")}
+ * )
+ */
+private $groups;
+
+/**
+ * Inverse Side
+ *
+ * @ManyToMany(targetEntity="User", mappedBy="groups")
+ */
+private $features;
 ```
 
 > Note: Don't forget to execute `./bin/console doctrine:generate:entities AppBundle` command.
