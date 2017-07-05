@@ -32,6 +32,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * F - forked project
 * C - container for files/data
 * T - template for new projects
+* W - project for work
 * O - other type of project
 * D - device (n/a)
 
