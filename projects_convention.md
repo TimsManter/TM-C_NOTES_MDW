@@ -37,7 +37,8 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 
 ### Kind
 
-* WEB - website, web app or web API
+* WEB - website or web app
+* API - API backend
 * APP - desktop application
 * GAM - desktop game
 * MOB - mobile application
