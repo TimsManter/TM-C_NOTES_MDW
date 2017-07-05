@@ -78,9 +78,9 @@ function Square(props) {
 - `props` - tag attributes (immutable), gathered from constructor parameter, can be used in `render()`
 - `state` - private properties of the component, defined in constructor, can be used in `render()`
 
-> Do NOT update `state` directly, use `setState()` instead.
-
-> Additional ones can be added to class but not used in `render()` method.
+> - Do NOT update `state` directly, use `setState()` instead.
+> - Additional ones can be added to class but not used in `render()` method.
+> - `props` has special property `children which contains component nested element.
 
 ## Build-in controller methods
 
