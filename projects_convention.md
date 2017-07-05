@@ -79,7 +79,9 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>]
 * C99 - C99 or newer
 * CPP - C++
 * JSC - JavaScript
+* JSX - JSX
 * TSC - TypeScript
+* TSX - TSX
 * JAV - Java
 * PHP - PHP
 * PYT - Python 3
