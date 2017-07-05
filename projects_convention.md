@@ -22,7 +22,7 @@
 ## Syntax
 
 ```
-TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][_PART]
+TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>][_PART]
 ```
 
 ### Type
