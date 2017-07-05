@@ -58,6 +58,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>]
 * SYM - Symfony 2/3
 * ANG - AngularJS or Angular2+
 * VUE - Vue.js
+* REA - React
 * JQR - jQuery
 * NET - .NET Framework
 * MON - Mono Framework
