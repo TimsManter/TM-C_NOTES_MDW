@@ -1,5 +1,23 @@
 # React
 
+## JSX
+
+```jsx
+const inlineCode = <div>Text</div>;
+const multilineCode = (
+  <div id="literal-string">
+    <span>Text</span>
+  </div>
+);
+const expressionCode = (
+  <div id={someValue} className={classString}> // no quotes here
+    <span>{isCorrect ? "Yes" : "No"}</span> // can be multiline too
+  </div>
+);
+```
+
+> Inserted values are always escaped
+
 ## Root render
 
 ```jsx
@@ -120,3 +138,30 @@ function Mailbox(props) {
   );
 }
 ```
+
+## Enumeration
+
+### List
+
+```jsx
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number[, index]) =>
+    <li key={number.toString()}> // or `index`
+      {number}
+    </li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
+
+const numbers = [1, 2, 3, 4, 5];
+ReactDOM.render(
+  <NumberList numbers={numbers} />,
+  document.getElementById('root')
+);
+```
+
+> - Key have to be unique only in specific array scope, not in global scope.
+> - Key is not passed to component.
