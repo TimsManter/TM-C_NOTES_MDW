@@ -90,6 +90,8 @@ function Square(props) {
 - `componentDidMount()` - lifecycle hook called when mounted in DOM
 - `componentWillUnmount()` - lifecycle hook called when unmounted from DOM
 
+> - `render()` method in TypeScript have to return one element, in case of plain JSX can return array of elements as well.
+
 ## Conditional rendering
 
 ### By `null`
