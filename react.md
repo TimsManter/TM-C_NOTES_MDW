@@ -80,7 +80,7 @@ function Square(props) {
 
 > - Do NOT update `state` directly, use `setState()` instead.
 > - Additional ones can be added to class but not used in `render()` method.
-> - `props` has special property `children which contains component nested element.
+> - `props` has special property `children` which contains component nested element.
 
 ## Build-in controller methods
 
