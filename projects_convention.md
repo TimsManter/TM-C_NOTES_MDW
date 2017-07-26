@@ -22,7 +22,7 @@
 ## Syntax
 
 ```
-TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][_PART]
+TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>][_PART]
 ```
 
 ### Type
@@ -32,16 +32,19 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * F - forked project
 * C - container for files/data
 * T - template for new projects
+* W - project for work (should be private)
 * O - other type of project
 * D - device (n/a)
 
 ### Kind
 
-* WEB - website or web app
+* WEB - full website
+* SPA - single page web app
+* API - API backend
 * APP - desktop application
 * GAM - desktop game
 * MOB - mobile application
-* MOG - mogile game
+* MOG - mobile game
 * MOV - movie or course
 * AVR - Atmel AVR microcontroller
 * MCR - microcontroller (other)
@@ -55,6 +58,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * SYM - Symfony 2/3
 * ANG - AngularJS or Angular2+
 * VUE - Vue.js
+* REA - React
 * JQR - jQuery
 * NET - .NET Framework
 * MON - Mono Framework
@@ -75,7 +79,9 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<codename>][_<kind>][_<framework>][_<lang>][
 * C99 - C99 or newer
 * CPP - C++
 * JSC - JavaScript
+* JSX - JSX
 * TSC - TypeScript
+* TSX - TSX
 * JAV - Java
 * PHP - PHP
 * PYT - Python 3

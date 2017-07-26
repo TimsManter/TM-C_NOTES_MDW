@@ -22,6 +22,8 @@
   - [Requirements](#requirements)
   - [Redirect](#redirect)
   - [JSON](#json)
+- [Service](#service)
+  - [Aquiring](#aquiring)
 - [Doctrine](#doctrine)
   - [Relations](#relations)
     - [Many to one](#many-to-one)
@@ -133,6 +135,21 @@ return $this->json(array('username' => 'jane.doe'));
 
 // the shortcut defines three optional arguments
 // return $this->json($data, $status = 200, $headers = array(), $context = array());
+```
+
+## Service
+
+### Aquiring
+
+```php
+use Psr\Log\LoggerInterface;
+
+// by type-hint as action method paramether
+public function listAction(LoggerInterface $logger)
+{
+  // or by id (service must be public)
+  $logger = $container->get('logger');
+}
 ```
 
 ## Doctrine
