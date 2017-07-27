@@ -22,6 +22,13 @@
   - [Requirements](#requirements)
   - [Redirect](#redirect)
   - [JSON](#json)
+- [Service](#service)
+  - [Check services](#check-services)
+  - [Aquiring](#aquiring)
+  - [Nesting](#nesting)
+  - [Parameters](#parameters)
+    - [Configuration](#configuration)
+    - [Use](#use)
 - [Doctrine](#doctrine)
   - [Relations](#relations)
     - [Many to one](#many-to-one)
@@ -133,6 +140,67 @@ return $this->json(array('username' => 'jane.doe'));
 
 // the shortcut defines three optional arguments
 // return $this->json($data, $status = 200, $headers = array(), $context = array());
+```
+
+## Service
+
+### Check services
+
+` php bin/console debug:container`
+
+### Aquiring
+
+```php
+use Psr\Log\LoggerInterface;
+
+// by type-hint as action method paramether
+public function listAction(LoggerInterface $logger)
+{
+  // or by id (service must be public)
+  $logger = $container->get('logger');
+}
+```
+
+### Nesting
+
+```php
+use Psr\Log\LoggerInterface;
+
+class MessageGenerator
+{
+  private $logger;
+  public function __construct(LoggerInterface $logger)
+  { // register service by constructor of another service
+    $this->logger = $logger;
+  }
+```
+
+### Parameters
+
+#### Configuration
+```yml
+# app/config/services.yml
+parameters:
+  admin_email: manager@example.com
+
+services:
+  # ...
+  AppBundle\Updates\SiteUpdateManager:
+    arguments:
+      $adminEmail: '%admin_email%'
+```
+
+#### Use
+
+```php
+public function newAction()
+{
+  // controller must extend Controller class
+  $adminEmail = $this->getParameter('admin_email');
+
+  // or full path
+  $adminEmail = $this->container->getParameter('admin_email');
+}
 ```
 
 ## Doctrine
