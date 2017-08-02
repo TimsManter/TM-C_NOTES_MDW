@@ -18,17 +18,28 @@
   - [Install dependencies](#install-dependencies)
   - [Update dependencies](#update-dependencies)
 - [Controller](#controller)
+  - [Request](#request)
+    - [Available bags](#available-bags)
+    - [Methods](#methods)
+    - [Headers](#headers)
+    - [`ParameterBag` methods](#parameterbag-methods)
+  - [Response](#response)
+    - [Methods](#methods-1)
+    - [Cookies](#cookies)
+    - [Redirect](#redirect)
+    - [Stream](#stream)
+    - [JSON](#json)
 - [Router](#router)
   - [Requirements](#requirements)
-  - [Redirect](#redirect)
-  - [JSON](#json)
+  - [Redirect](#redirect-1)
+  - [JSON](#json-1)
 - [Service](#service)
   - [Check services](#check-services)
   - [Aquiring](#aquiring)
   - [Nesting](#nesting)
   - [Parameters](#parameters)
     - [Configuration](#configuration)
-    - [Use](#use)
+    - [Using](#using)
 - [Doctrine](#doctrine)
   - [Relations](#relations)
     - [Many to one](#many-to-one)
@@ -64,7 +75,6 @@
 `composer update`
 
 ## Controller
-
 ```php
 // src/AppBundle/Controller/LuckyController.php
 namespace AppBundle\Controller;
@@ -88,6 +98,128 @@ class LuckyController extends Controller
     );
   }
 }
+```
+
+### Request
+```php
+use Symfony\Component\HttpFoundation\Request;
+
+$request = Request::createFromGlobals();
+```
+
+#### Available bags
+Object | Bag | Class
+--- | --- | ---
+request | $_POST | ParameterBag
+query | $_GET | ParameterBag
+cookies | $_COOKIE | ParameterBag
+attributes | TODO: Add section | ParameterBag
+files | $_FILES | FileBag
+server | $_SERVER | ServerBag
+headers | Request headers | HeaderBag
+
+#### Methods
+Method | Description
+--- | ---
+getPathInfo() | Relative path
+getSession() | Current session
+hasPreviousSession() | Check session
+
+#### Headers
+Method | Header
+--- | ---
+getAcceptableContentTypes() | Accept
+getLanguages() | Accept-Language
+getCharsets() | Accept-Charset
+getEncodings() | Accept-Encoding
+
+#### `ParameterBag` methods
+Method | Description
+--- | ---
+all() | All parameters
+keys() | All keys
+replace() | Replace parameter
+add() | Add parameter
+get(key, default) | Get parameter value
+set() | Set parameter value
+has() | Check key in bag
+remove() | Remove parameter
+
+### Response
+```php
+use Symfony\Component\HttpFoundation\Response;
+
+$response = new Response(
+    'Content',
+    Response::HTTP_OK,
+    array('content-type' => 'text/html')
+);
+```
+
+```php
+// Check if valid with request
+$response->prepare($request);
+
+// Send
+$response->send();
+```
+
+#### Methods
+
+Method | Description
+--- | ---
+setContent(content) | Set content
+headers->set(name, value) | Set header
+headers->setCookie(cookie) | Set cookie
+headers->clearCookie() | Remove cookie
+setStatusCode(Response::HTTP_OK) | Set status code
+setCharset("UTF-8") | Set charset
+send() | Send response
+
+#### Cookies
+```php
+use Symfony\Component\HttpFoundation\Cookie;
+
+$response->headers->setCookie(new Cookie('foo', 'bar'));
+```
+
+#### Redirect
+
+```php
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+$response = new RedirectResponse('http://example.com/');
+```
+
+#### Stream
+```php
+use Symfony\Component\HttpFoundation\StreamedResponse;
+
+$response = new StreamedResponse();
+$response->setCallback(function () {
+    var_dump('Hello World');
+    flush();
+    sleep(2);
+    var_dump('Hello World');
+    flush();
+});
+$response->send();
+```
+
+#### JSON
+```php
+use Symfony\Component\HttpFoundation\JsonResponse;
+
+// if you know the data to send when creating the response
+$response = new JsonResponse(array('data' => 123));
+
+// if you don't know the data to send when creating the response
+$response = new JsonResponse();
+// ...
+$response->setData(array('data' => 123));
+
+// if the data to send is already encoded in JSON
+$response = JsonResponse::fromJsonString('{ "data": 123 }');
 ```
 
 ## Router
@@ -117,7 +249,6 @@ public function showAction($slug) { } // additional parameter
 `@Method("PUT")` only PUT type of request
 
 ### Redirect
-
 ```php
 // redirect to the "homepage" route
 return $this->redirectToRoute('homepage');
@@ -133,7 +264,6 @@ return $this->redirect('http://symfony.com/doc');
 ```
 
 ### JSON
-
 ```php
 // returns '{"username":"jane.doe"}' and sets the proper Content-Type header
 return $this->json(array('username' => 'jane.doe'));
@@ -190,8 +320,7 @@ services:
       $adminEmail: '%admin_email%'
 ```
 
-#### Use
-
+#### Using
 ```php
 public function newAction()
 {
@@ -208,7 +337,6 @@ public function newAction()
 ### Relations
 
 #### Many to one
-
 ```php
 use Doctrine\ORM\Mapping as ORM;
 
@@ -223,7 +351,6 @@ class Product
 ```
 
 #### One to many
-
 ```php
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
