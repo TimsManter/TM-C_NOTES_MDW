@@ -1,5 +1,27 @@
 # React
 
+<!-- TOC -->
+
+- [JSX](#jsx)
+- [Root render](#root-render)
+- [Component schema](#component-schema)
+  - [`class` type](#class-type)
+  - [`function` type](#function-type)
+- [Build-in controller objects](#build-in-controller-objects)
+- [Build-in controller methods](#build-in-controller-methods)
+- [Conditional rendering](#conditional-rendering)
+  - [By `null`](#by-null)
+  - [By ternary operator](#by-ternary-operator)
+  - [By JavaScript autism](#by-javascript-autism)
+- [Enumeration](#enumeration)
+  - [List](#list)
+- [Forms](#forms)
+  - [Textarea](#textarea)
+  - [Select](#select)
+  - [Naming elements](#naming-elements)
+
+<!-- /TOC -->
+
 ## JSX
 
 ```jsx
