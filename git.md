@@ -48,6 +48,8 @@ Syntax | Description
 `git branch` | list branches.
 `git branch <new_one>` | create branch.
 `git branch -d <branch_name>` | delete branch.
+`git branch -m <old_name> <new_name>` | rename branch.
+`git branch -m <new_name>` | rename current branch.
 `git checkout <branch_name>` | change current branch.
 `git merge <some_branch>` | merge some_branch with current one.
 
