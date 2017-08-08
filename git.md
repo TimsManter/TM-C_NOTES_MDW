@@ -12,6 +12,7 @@
 <!-- TOC -->
 
 - [Overview](#overview)
+- [Config](#config)
 - [Common](#common)
 - [Backtrack](#backtrack)
 - [Branches](#branches)
@@ -21,6 +22,11 @@
   - [Change author info](#change-author-info)
 
 <!-- /TOC -->
+
+## Config
+
+`git config --global user.name "Name"`
+`git config --global user.email email@example.com`
 
 ## Common
 
