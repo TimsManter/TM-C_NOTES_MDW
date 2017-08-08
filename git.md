@@ -17,6 +17,8 @@
 - [Branches](#branches)
 - [Teamwork](#teamwork)
 - [Bare repository](#bare-repository)
+- [Interactive Rebase](#interactive-rebase)
+  - [Change author info](#change-author-info)
 
 <!-- /TOC -->
 
@@ -72,3 +74,16 @@ Syntax | Description
 -------|------------
 `git --bare init` | init bare repository.
 `git --git-dir="$HOME/.cfg" --work-tree="$HOME" <command>` | using bare repository.
+
+## Interactive Rebase
+### Change author info
+
+- Commits: A - B - C - D - E
+- Rebase: From B to D
+
+1. `git rebase -i <sha_of_A>`
+2. Change commits B, C, D mode to `edit`
+3. `git commit --amend --author="Name <email@example.com>"`
+4. `git rebase --continue`
+5. Repeat 3. and 4. two more times
+6. Done
