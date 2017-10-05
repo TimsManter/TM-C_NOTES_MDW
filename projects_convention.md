@@ -2,24 +2,25 @@
 
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
-* @CreationDate: 2016-01
+* @CreateDate: 2016-01
+* @Locale: en_US
 
 ## Overview
-
 <!-- TOC -->
 
 - [Overview](#overview)
-- [Syntax](#syntax)
+- [Name syntax](#name-syntax)
   - [Type](#type)
   - [Kind](#kind)
   - [Frameworks](#frameworks)
   - [Languages](#languages)
   - [PART](#part)
-- [Template metadata](#template-metadata)
+- [Metadata template](#metadata-template)
+- [Directory tree](#directory-tree)
 
 <!-- /TOC -->
 
-## Syntax
+## Name syntax
 
 ```
 TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>][_PART]
@@ -32,8 +33,9 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>]
 * F - forked project
 * C - container for files/data
 * T - template for new projects
-* W - project for work (should be private)
+* W - project for work
 * O - other type of project
+* K - key (n/a)
 * D - device (n/a)
 
 ### Kind
@@ -94,7 +96,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>]
 
 > Note: Only if this is only one part of entire project; partial project
 
-## Template metadata
+## Metadata template
 
 > Note: Metadata is placed directly under main header.
 
@@ -114,4 +116,18 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>]
 * @License: [GPLv3|MIT](LICENSE.md)
 * @Status: [Dev|Alpha|Beta|Stable] | [Active|Obsolete] | Sample
 * @ProjectSite: [Me.TimsManter.NET](http://me.timsmanter.net)
+```
+
+## Directory tree
+> NOTE: All elements with `*` are required
+```
+/<root>
+|
+|- src*/ < Source code directory, all project code belongs here
+|- docs*/ < Documentation directory
+|    |- screenshots/ < Screenshots of an app
+|    `- API_REFERENCE.md < API queries and models reference
+|- README.md*
+`- LICENSE.md
+
 ```
