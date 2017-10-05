@@ -23,7 +23,7 @@
 
 ## Name syntax
 ```
-TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>][_PART]
+TM-<type>[_<labs-name>[-<lab-no>]]_<code-name>[_<kind>][_<framework>][_<lang>][_PART]
 ```
 
 ### Type
@@ -40,6 +40,7 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>]
 
 ### Kind
 
+* CLO - cloud-based project
 * WEB - full website
 * SPA - single page web app
 * API - API backend
