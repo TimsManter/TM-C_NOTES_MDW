@@ -6,6 +6,7 @@
 * @Locale: en_US
 
 ## Overview
+
 <!-- TOC -->
 
 - [Overview](#overview)
@@ -21,7 +22,6 @@
 <!-- /TOC -->
 
 ## Name syntax
-
 ```
 TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>][_PART]
 ```
@@ -119,11 +119,14 @@ TM-<type>[_<labs-name>[-<lab-no>]][_<code-name>][_<kind>][_<framework>][_<lang>]
 ```
 
 ## Directory tree
+
 > NOTE: All elements with `*` are required
 ```
 /<root>
 |
 |- src*/ < Source code directory, all project code belongs here
+|    |- PART1
+|    `- PART2
 |- docs*/ < Documentation directory
 |    |- screenshots/ < Screenshots of an app
 |    `- API_REFERENCE.md < API queries and models reference
