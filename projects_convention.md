@@ -41,7 +41,7 @@ TM-<type>[_<labs-name>[-<lab-no>]]_<code-name>[_<kind>][_<framework>][_<lang>][_
 ### Kind
 
 * CLO - cloud-based project
-* WEB - full website
+* WEB - website based project
 * SPA - single page web app
 * API - API backend
 * APP - desktop application
