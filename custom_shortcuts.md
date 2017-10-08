@@ -27,6 +27,15 @@ Shortcut | Action
 --- | ---
 `Win + Ctrl + <Arrow>` | Switch workspace
 
+### Clipboard
+
+Shortcut | Action
+--- | ---
+`Win + Z` | Open clipboard
+`Alt + X` | Next entry
+`Alt | C` | Previous entry
+`Win + Alt + Z` | Clear clipboard (except current)
+
 ### Custom
 
 Shortcut | Action | Command
