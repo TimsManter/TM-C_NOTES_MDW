@@ -11,6 +11,7 @@
 
 Shortcut | Action
 --- | ---
+`Win + W` | Close window
 `Win + T` | Toggle always on top
 `Win + Up` | Toggle maximization
 `Win + Down` | Minimize
