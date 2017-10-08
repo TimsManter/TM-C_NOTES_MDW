@@ -11,7 +11,7 @@
 
 Shortcut | Action
 --- | ---
-`Win + T` | Always on top
+`Win + T` | Toggle always on top
 `Win + Up` | Toggle maximization
 `Win + Down` | Minimize
 `Win + Tab [+ Shift]` | Switch applications forward [backward]
@@ -42,7 +42,9 @@ Shortcut | Action | Command
 Shortcut | Action
 --- | ---
 `CapsLock` | Backspace
-`Ctrl + J` | Join lines
+`Ctrl + L` | Go to line...
+`Ctrl + J` | Join selected lines
+`Ctrl + Shift + Up/Down` | Add cursor up/down
 `Ctrl + Alt + Up/Down` | Copy line up/down
 
 ### Window
@@ -50,6 +52,10 @@ Shortcut | Action
 Shortcut | Action
 --- | ---
 `Ctrl + Shift + R` | Reload window
+`Ctrl + E` | Switch focus between files tree and editor
+`Ctrl + Shift + E` | New file
+`Ctrl + Shift + Alt + E` | New directory
+`Alt + E` | Collapse all directories
 
 ### Terminal
 
