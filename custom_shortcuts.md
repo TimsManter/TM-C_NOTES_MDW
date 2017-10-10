@@ -56,6 +56,7 @@ Shortcut | Action
 `Ctrl + J` | Join selected lines
 `Ctrl + Shift + Up/Down` | Add cursor up/down
 `Ctrl + Alt + Up/Down` | Copy line up/down
+`Ctrl + Shift + A` | Toggle block comment
 
 ### Window
 
