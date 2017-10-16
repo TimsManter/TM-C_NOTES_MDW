@@ -8,6 +8,7 @@
   - [`class` type](#class-type)
   - [`function` type](#function-type)
 - [Build-in controller objects](#build-in-controller-objects)
+  - [Additional objects](#additional-objects)
 - [Build-in controller methods](#build-in-controller-methods)
 - [Conditional rendering](#conditional-rendering)
   - [By `null`](#by-null)
@@ -103,6 +104,12 @@ function Square(props) {
 > - Do NOT update `state` directly, use `setState()` instead.
 > - Additional ones can be added to class but not used in `render()` method.
 > - `props` has special property `children` which contains component nested element.
+> - Type of `defaultProps` object in TypeScript can be defined using existing `P`/`Props` type and build-in `Partial<>` generic like so: `defaultProps: Partial<P> = {...};`
+
+### Additional objects
+
+- `defaultProps` - default values for props that are not defined
+- `propTypes` - types defined using extenral PropTypes library (`prop-types` npm package)
 
 ## Build-in controller methods
 
