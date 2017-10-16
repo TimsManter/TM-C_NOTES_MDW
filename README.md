@@ -12,9 +12,9 @@
 - [Vala](vala.md)
 
 ## Framework
-
+- [React](react.md)
 - [Angular 2](angular2.md)
-- [Symfony 2/3](symfony3.md)
+- [Symfony 3](symfony.md)
 - [Vue.js](vuejs.md)
 
 ## Software
@@ -23,10 +23,12 @@
 - [Lede/OpenWRT](lede.md)
 - [Nmap](nmap.md)
 - [systemd](systemd.md)
+- [Visual Studio Code](vs_code.md)
 
 ## Other
 
 - [Atmel AVR Registers](atmel_avr_registers.md)
 - [Data Dictionary](data_dictionary.md)
-- [Language Comparison](languages_comparison.md)
+- [Languages Comparison](languages_comparison.md)
 - [Projects Convention](projects_convention.md)
+- [Custom Shortcuts](custom_shortcuts.md)
