@@ -16,6 +16,7 @@
 - [Commands](#commands)
 - [Applying changes](#applying-changes)
 - [Aquiring informations](#aquiring-informations)
+- [Wireless specifi commands](#wireless-specifi-commands)
 
 <!-- /TOC -->
 
@@ -49,3 +50,7 @@ commit      | commit changes
 ## Aquiring informations
 
 - `logread` - show logs
+
+## Wireless specifi commands
+
+- `wifi config` - reload wireless device configuration
