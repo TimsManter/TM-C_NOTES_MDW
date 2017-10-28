@@ -46,6 +46,10 @@
     - [One to many](#one-to-many)
     - [Many to Many](#many-to-many)
   - [Types of data](#types-of-data)
+- [Validation](#validation)
+  - [Constraints](#constraints)
+    - [Rules](#rules)
+    - [Validation](#validation-1)
 
 <!-- /TOC -->
 
@@ -424,3 +428,36 @@ simple_array||array[string]|implode()/explode() with comma delimeter
 json||array|json_decode()
 json_array||array|**deprecated**
 object||object|serialization
+
+## Validation
+
+### Constraints
+
+#### Rules
+```php
+use Symfony\Component\Validator\Constraints as Assert;
+
+class Author
+{
+  /**
+    * @Assert\NotBlank()
+    */
+  public $name;
+}
+```
+
+#### Validation
+```php
+public function authorAction() {
+  $author = new Author();
+  // Modify new object
+  $validator = $this->get('validator');
+  $errors = $validator->validate($author);
+  // $errors is type of ConstraintViolationList
+  if (count($errors) > 0) {
+    $errorsString = (string) $errors; // toString()
+    return new Response($errorsString);
+  }
+  return new Response('The author is valid! Yes!');
+}
+```
