@@ -57,6 +57,8 @@ Shortcut | Action
 `Ctrl + Shift + Up/Down` | Add cursor up/down
 `Ctrl + Alt + Up/Down` | Copy line up/down
 `Ctrl + Shift + A` | Toggle block comment
+`Ctrl + Shift + Backspace` | Remove characters before cursor
+`Ctrl + Shift + Del` | Remove characters after cursor
 
 ### Window
 
