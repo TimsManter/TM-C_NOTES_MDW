@@ -47,9 +47,22 @@
     - [Many to Many](#many-to-many)
   - [Types of data](#types-of-data)
 - [Validation](#validation)
+  - [Defining rules](#defining-rules)
+  - [Validator](#validator)
   - [Constraints](#constraints)
-    - [Rules](#rules)
-    - [Validation](#validation-1)
+    - [Basic](#basic)
+    - [String](#string)
+    - [Number](#number)
+    - [Comparison](#comparison)
+    - [Date](#date)
+    - [Collection](#collection)
+    - [File](#file)
+    - [Special](#special)
+    - [Other](#other)
+  - [Targets](#targets)
+    - [Property](#property)
+    - [Getter](#getter)
+    - [Class](#class)
 
 <!-- /TOC -->
 
@@ -431,9 +444,7 @@ object||object|serialization
 
 ## Validation
 
-### Constraints
-
-#### Rules
+### Defining rules
 ```php
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -443,10 +454,24 @@ class Author
     * @Assert\NotBlank()
     */
   public $name;
+
+  /**
+    * @Assert\Choice(
+    *  choices = { "fiction", "non-fiction" },
+    *  message = "Choose a valid genre."
+    * )
+    */
+  public $genre;
+
+  /**
+    * @Assert\NotBlank()
+    * @Assert\Length(min=3)
+    */
+  private $firstName;
 }
 ```
 
-#### Validation
+### Validator
 ```php
 public function authorAction() {
   $author = new Author();
@@ -461,3 +486,90 @@ public function authorAction() {
   return new Response('The author is valid! Yes!');
 }
 ```
+
+### Constraints
+
+#### Basic
+
+- NotBlank
+- Blank
+- NotNull
+- IsNull
+- IsTrue
+- IsFalse
+- Type
+
+#### String
+
+- Email
+- Length
+- Url
+- Regex
+- Ip
+- Uuid
+
+#### Number
+
+- Range
+
+#### Comparison
+
+- EqualTo
+- NotEqualTo
+- IdenticalTo
+- NotIdenticalTo
+- LessThan
+- LessThanOrEqual
+- GreaterThan
+- GreaterThanOrEqual
+
+#### Date
+
+- Date
+- DateTime
+- Time
+
+#### Collection
+
+- Choice
+- Collection
+- Count
+- UniquaEntity
+- Language
+- Locale
+- Country
+
+#### File
+
+- File
+- Image
+
+#### Special
+
+- Bic
+- CardScheme
+- Currency
+- Luhn
+- Iban
+- Isbn
+- Issn
+
+#### Other
+
+- Callback
+- Expression
+- All
+- UserPassword
+- Valid
+
+### Targets
+
+#### Property
+> The rule is applied to `private`, `protected` or `public` field.
+
+#### Getter
+> The rule is applied to method that starts from `get`, `is` or `has`.
+> Helps creating dynamic validation.
+
+#### Class
+> For custom advanced rules.
