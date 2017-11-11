@@ -10,6 +10,7 @@
 - [Sass/SCSS](scss.md)
 - [TypeScript](typescript.md)
 - [Vala](vala.md)
+- [Bash](bash.md)
 
 ## Framework
 - [React](react.md)
