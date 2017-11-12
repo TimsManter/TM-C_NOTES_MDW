@@ -122,7 +122,7 @@ TM-<type>[_<labs-name>[-<lab-no>]]_<code-name>[_<kind>][_<framework>][_<lang>][_
 
 ## Directory tree
 
-> NOTE: All elements with `*` are required
+> Note: All elements with `*` are required
 ```
 /<root>
 |
@@ -133,6 +133,5 @@ TM-<type>[_<labs-name>[-<lab-no>]]_<code-name>[_<kind>][_<framework>][_<lang>][_
 |    |- screenshots/ < Screenshots of an app
 |    `- API_REFERENCE.md < API queries and models reference
 |- README.md*
-`- LICENSE.md
-
+`- LICENSE
 ```
