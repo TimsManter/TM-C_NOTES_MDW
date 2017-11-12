@@ -13,6 +13,7 @@
 <!-- TOC -->
 
 - [Overview](#overview)
+- [Hashbang](#hashbang)
 - [Redirections](#redirections)
   - [Descriptors](#descriptors)
   - [Operators](#operators)
@@ -38,6 +39,13 @@
 - [Commands](#commands)
 
 <!-- /TOC -->
+
+## Hashbang
+
+> Note: It have to be in the very first line.
+
+`#!/bin/bash` - Normal script
+`#!/bin/bash -x` - Debugging enabled
 
 ## Redirections
 
