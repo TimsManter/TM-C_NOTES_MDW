@@ -36,7 +36,7 @@
   - [Integer](#integer)
   - [String](#string)
 - [Files](#files)
-- [Commands](#commands)
+- [Useful commands](#useful-commands)
 
 <!-- /TOC -->
 
@@ -44,8 +44,8 @@
 
 > Note: It have to be in the very first line.
 
-`#!/bin/bash` - Normal script
-`#!/bin/bash -x` - Debugging enabled
+- `#!/bin/bash` - Normal script
+- `#!/bin/bash -x` - Debugging enabled
 
 ## Redirections
 
@@ -129,13 +129,13 @@ fi
 OPTIONS="Hello Quit"
 select opt in $OPTIONS; do
   if [ "$opt" = "Quit" ]; then
-  echo done
-  exit
+    echo done
+    exit
   elif [ "$opt" = "Hello" ]; then
-  echo Hello World
+    echo Hello World
   else
-  clear
-  echo bad option
+    clear
+    echo bad option
   fi
 done
 ```
@@ -274,7 +274,7 @@ Test | Description
 `F1 -ef F2` | F1 and F2 same hard links
 `!` | Not
 
-## Commands
+## Useful commands
 
 Command | Description
 --- | ---
