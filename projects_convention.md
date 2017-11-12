@@ -92,6 +92,7 @@ TM-<type>[_<labs-name>[-<lab-no>]]_<code-name>[_<kind>][_<framework>][_<lang>][_
 * ASM - Assembly
 * MDW - Markdown
 * GML - GameMaker Language
+* BSH - Bash
 
 ### PART
 
