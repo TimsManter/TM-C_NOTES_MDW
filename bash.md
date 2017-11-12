@@ -75,7 +75,7 @@ Operator | Syntax | Description
 
 ```bash
 # Define variable
-MYVAR="Hello"
+MYVAR="Hello" # Cannot contain spaces
 
 # Use variable
 echo $MYVAR
