@@ -115,7 +115,7 @@ TM-<type>[_<labs-name>[-<lab-no>]]_<code-name>[_<kind>][_<framework>][_<lang>][_
 * @Framework: .NET Core
 * @Locale: en_US | pl_PL
 * @Documentation: [Polish](docs/)
-* @License: [GPLv3|MIT](LICENSE.md)
+* @License: [GPLv3|MIT](LICENSE)
 * @Status: [Dev|Alpha|Beta|Stable] | [Active|Obsolete] | Sample
 * @ProjectSite: [Me.TimsManter.NET](http://me.timsmanter.net)
 ```
