@@ -180,7 +180,7 @@ otherfun "World" # "World"
 ## Read input
 ```bash
 echo Please, enter your firstname and lastname
-read FN LN 
+read FN LN
 echo "Hi! $LN, $FN !"
 ```
 
