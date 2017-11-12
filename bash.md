@@ -34,6 +34,7 @@
 - [Comparison](#comparison)
   - [Integer](#integer)
   - [String](#string)
+- [Files](#files)
 - [Commands](#commands)
 
 <!-- /TOC -->
@@ -234,6 +235,36 @@ Operator | Syntax | Description
 `>` | `[[ "$A" > "$B" ]]` or `[ "$A" \> "$B" ]` | Greater than (ASCII)
 `-z` | `[ -z "$A" ]` | Empty string (length == 0)
 `-n` | `[ -n "$A" ]` | Not empty (length > 0)
+
+## Files
+
+Test | Description
+--- | ---
+`-e` | File exists
+`-a` | File exists (deprecated)
+`-f` | Regular file
+`-s` | Not zero size
+`-d` | Directory
+`-b` | Block device file
+`-c` | Character device
+`-p` | Pipe
+`-h` | Symbolic link
+`-L` | Symbolic link
+`-S` | Socket
+`-t` | Terminal descriptor
+`-r` | Read permission
+`-w` | Write permission
+`-x` | Execute permission
+`-g` | Has `sgid` flag
+`-u` | Has `suid` flag
+`-s` | Sticky bit
+`-O` | You are the owner
+`-G` | Of your group
+`-N` | Modified since last read
+`F1 -nt F2` | F1 newer than F2
+`F1 -ot F2` | F1 older than F2
+`F1 -ef F2` | F1 and F2 same hard links
+`!` | Not
 
 ## Commands
 
