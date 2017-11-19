@@ -10,13 +10,12 @@
 <!-- TOC -->
 
 - [Intstallation](#intstallation)
-  - [Symfony Installer](#symfony-installer)
-  - [Composer](#composer)
 - [Setup](#setup)
   - [Internal server](#internal-server)
-  - [Check configuration](#check-configuration)
   - [Install dependencies](#install-dependencies)
   - [Update dependencies](#update-dependencies)
+  - [Install more bundles](#install-more-bundles)
+- [File tree](#file-tree)
 - [Controller](#controller)
   - [Request](#request)
     - [Available bags](#available-bags)
@@ -68,22 +67,20 @@
 
 ## Intstallation
 
-### Symfony Installer
-`symfony new project_name [2.8]`
-
-### Composer
-`composer create-project symfony/framework-standard-edition project_name ["2.8.*"]`
-
-> Note: The last parameter is optional and allows to use specific version
+```sh
+# uses flex skeleton
+> composer create-project symfony/skeleton
+```
 
 ## Setup
 
 ### Internal server
 
-`php ./bin/console server:run`
-
-### Check configuration
-`http://localhost:8000/config.php`
+```sh
+# for symfony web-server
+composer require server
+./bin/console server:run
+```
 
 ### Install dependencies
 `composer install`
@@ -91,10 +88,71 @@
 ### Update dependencies
 `composer update`
 
+### Install more bundles
+```sh
+# samples
+composer require server
+composer require api
+composer require admin
+composer require orm
+composer require log
+composer require mailer
+```
+## File tree
+
+> None: Every directory (even a top one) is optional.
+```
+/root
+|-- assets/
+|-- bin/
+|    `-- console
+|-- config/
+|    |-- packages/
+|    |    |-- dev/*.yaml
+|    |    |-- prod/*.yaml
+|    |    |-- test/*.yaml
+|    |    `-- *.yaml
+|    |-- routes/
+|    |    |-- dev/*.yaml
+|    |    |-- prod/*.yaml
+|    |    |-- test/*.yaml
+|    |    `-- *.yaml
+|    |-- bundles.php
+|    |-- routes.yaml
+|    |-- services.yaml
+|-- public/
+|    `-- index.php
+|-- src/
+|    |-- Command/*Command.php
+|    |-- Controller/**/*Controller.php
+|    |-- DataFixtures/
+|    |-- Entity/
+|    |-- EventSubscriber/*Subscriber.php
+|    |-- Form/
+|    |    |-- DataTransformer/*Transformer.php
+|    |    |-- Type/*Type.php
+|    |    `-- *Type.php
+|    |-- Repository/
+|    |-- Resources/
+|    |-- Security/
+|    |-- Twig/**/*.html.twig
+|    |-- Utils/
+|    |-- Events.php
+|    `-- Kernel.php
+|-- templates/
+|-- tests/
+|-- translations/
+|-- var/
+|-- vendor/
+|-- .env
+|-- composer.json
+`/-- composer.lock
+```
+
 ## Controller
 ```php
-// src/AppBundle/Controller/LuckyController.php
-namespace AppBundle\Controller;
+// src/App/Controller/LuckyController.php
+namespace App\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
