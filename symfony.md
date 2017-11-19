@@ -1,4 +1,4 @@
-# Symfony3
+# Symfony 3/4
 
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
@@ -40,6 +40,8 @@
     - [Configuration](#configuration)
     - [Using](#using)
 - [Doctrine](#doctrine)
+  - [Entity](#entity)
+  - [`Column` attributes](#column-attributes)
   - [Relations](#relations)
     - [Many to one](#many-to-one)
     - [One to many](#one-to-many)
@@ -415,6 +417,60 @@ public function newAction()
 
 ## Doctrine
 
+### Entity
+
+```php
+// src/Entity/Product.php
+namespace App\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="product")
+ */
+class Product
+{
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="decimal", scale=2)
+     */
+    private $price;
+
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $description;
+}
+```
+
+### `Column` attributes
+
+> Note: All attributes are optional.
+
+Name | Default | Description
+---|---|---
+type | string | Mapping type
+name | field name | Name of the column in the database
+length | 255 | Length of the string
+unique | false | Column is a unique key
+nullable | false | Value can be null
+precision | 0 | Maximum precision of decimal number
+scale | 0 | Number of digits in decimal number
+columnDefinition | | Custom create snippet
+options | Options for database platform when creating
+
 ### Relations
 
 #### Many to one
@@ -478,33 +534,33 @@ private $features;
 
 ### Types of data
 
-Type | Size | PHP type | Description
+Type | PHP type | Description
 -----|------|----------|------------
-smallint|2B|integer|0 to 65535 or −32768 to 32767
-integer|4B|integer|0 to 4294967295 or −2147483648 to 2147483647
-bigint|8B|string|
-decimal||string|
-float||float/double|
-string||string|Limited length
-text||string|Unlimited length
-guid||string|"Globally Unique Identifier"
-binary||resource|Limited length
-blob||resource|Unlimited length
-boolean|1b|boolean|true or false
-date|date only|\DateTime|
-date_immutable|date only|\DateTimeImmutable|
-datetime|date & time|\DateTime
-datetime_immutable|date & time|\DateTimeImmutable|
-datetimetz|date, time, timezone|\DateTime|
-datetimetz_immutable|date, time, timezone|\DateTimeImmutable|
-time|time only|\DateTime|
-time_immutable|time only|\DateTimeImmutable|
-dateinterval|date & time difference|\DateInterval|
-array||array|serialization
-simple_array||array[string]|implode()/explode() with comma delimeter
-json||array|json_decode()
-json_array||array|**deprecated**
-object||object|serialization
+smallint       | integer       | 0 to 65535 or −32768 to 32767
+integer        | integer       | 0 to 4294967295 or −2147483648 to 2147483647
+bigint         | string        |
+decimal        | string        |
+float          | float/double  |
+string         | string        | Limited length
+text           | string        | Unlimited length
+guid           | string        | "Globally Unique Identifier"
+binary         | resource      | Limited length
+blob           | resource      | Unlimited length
+boolean        | boolean       | true or false
+date           | date only     | \DateTime
+date_immutable | date only     | \DateTimeImmutable
+datetime       | date & time   | \DateTime
+datetime_immutable | date & time | \DateTimeImmutable
+datetimetz     | date, time, timezone | \DateTime
+datetimetz_immutable | date, time, timezone | \DateTimeImmutable
+time           | time only     | \DateTime
+time_immutable | time only     | \DateTimeImmutable
+dateinterval   | date & time difference | \DateInterval
+array          | array         | serialization
+simple_array   | array[string] | implode()/explode() with comma delimeter
+json           | array         | json_decode()
+json_array     | array         | **deprecated**
+object         | object        | serialization
 
 ## Validation
 
@@ -554,7 +610,6 @@ public function authorAction() {
 ### Constraints
 
 #### Basic
-
 - NotBlank
 - Blank
 - NotNull
@@ -564,7 +619,6 @@ public function authorAction() {
 - Type
 
 #### String
-
 - Email
 - Length
 - Url
@@ -573,11 +627,9 @@ public function authorAction() {
 - Uuid
 
 #### Number
-
 - Range
 
 #### Comparison
-
 - EqualTo
 - NotEqualTo
 - IdenticalTo
@@ -588,13 +640,11 @@ public function authorAction() {
 - GreaterThanOrEqual
 
 #### Date
-
 - Date
 - DateTime
 - Time
 
 #### Collection
-
 - Choice
 - Collection
 - Count
@@ -604,12 +654,10 @@ public function authorAction() {
 - Country
 
 #### File
-
 - File
 - Image
 
 #### Special
-
 - Bic
 - CardScheme
 - Currency
@@ -619,7 +667,6 @@ public function authorAction() {
 - Issn
 
 #### Other
-
 - Callback
 - Expression
 - All
