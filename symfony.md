@@ -125,28 +125,34 @@ composer require mailer
 |-- src/
 |    |-- Command/*Command.php
 |    |-- Controller/**/*Controller.php
-|    |-- DataFixtures/
-|    |-- Entity/
+|    |-- DataFixtures/*.php
+|    |-- Entity/*.php
 |    |-- EventSubscriber/*Subscriber.php
 |    |-- Form/
 |    |    |-- DataTransformer/*Transformer.php
 |    |    |-- Type/*Type.php
 |    |    `-- *Type.php
-|    |-- Repository/
+|    |-- Repository/*Repository.php
 |    |-- Resources/
 |    |-- Security/
-|    |-- Twig/**/*.html.twig
-|    |-- Utils/
+|    |-- Twig/*Extension.php
+|    |-- Utils/*.php
 |    |-- Events.php
 |    `-- Kernel.php
-|-- templates/
-|-- tests/
-|-- translations/
+|-- templates/**/*.html.twig
+|-- tests/**/*Test.php
+|-- translations/*.xlf
 |-- var/
+|    |-- cache/
+|    |-- data/
+|    |-- log/
+|    |-- sessions/
+|    |-- tmp/
+|    `-- SymfonyRequirements.php
 |-- vendor/
 |-- .env
 |-- composer.json
-`/-- composer.lock
+`-- composer.lock
 ```
 
 ## Controller
