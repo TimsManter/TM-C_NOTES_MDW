@@ -41,6 +41,9 @@
     - [Using](#using)
 - [Doctrine](#doctrine)
   - [Entity](#entity)
+  - [EntityManager](#entitymanager)
+    - [Save](#save)
+    - [Fetch](#fetch)
   - [`Column` attributes](#column-attributes)
   - [Relations](#relations)
     - [Many to one](#many-to-one)
@@ -452,6 +455,55 @@ class Product
      * @ORM\Column(type="text")
      */
     private $description;
+}
+```
+### EntityManager
+
+#### Save
+```php
+use App\Entity\Category;
+use App\Entity\Product;
+use Symfony\Component\HttpFoundation\Response;
+
+class DefaultController extends Controller
+{
+  public function createProductAction()
+  {
+    $category = new Category();
+    $category->setName('Computer Peripherals');
+
+    $product = new Product();
+    $product->setName('Keyboard');
+    $product->setPrice(19.99);
+    $product->setDescription('Ergonomic and stylish!');
+
+    // relate this product to the category
+    $product->setCategory($category);
+
+    $em = $this->getDoctrine()->getManager();
+    $em->persist($category);
+    $em->persist($product);
+    $em->flush();
+
+    return new Response(
+      'Saved new product with id: '.$product->getId()
+      .' and new category with id: '.$category->getId()
+    );
+  }
+}
+```
+#### Fetch
+```php
+use App\Entity\Product;
+// ...
+
+public function showAction($productId)
+{
+  $product = $this->getDoctrine()
+    ->getRepository(Product::class)
+    ->find($productId);
+
+  $categoryName = $product->getCategory()->getName();
 }
 ```
 
