@@ -1,4 +1,4 @@
-# Linux Tricks
+# Linux
 
 * @Distribution: Arch Linux
 * @CreateDate: 2017-10-20
