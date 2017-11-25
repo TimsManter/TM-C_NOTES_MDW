@@ -47,8 +47,11 @@
   - [`Column` attributes](#column-attributes)
   - [Relations](#relations)
     - [Many to one](#many-to-one)
+      - [Attributes](#attributes)
     - [One to many](#one-to-many)
+      - [Attributes](#attributes-1)
     - [Many to Many](#many-to-many)
+      - [Attributes](#attributes-2)
   - [Types of data](#types-of-data)
 - [Validation](#validation)
   - [Defining rules](#defining-rules)
@@ -539,6 +542,14 @@ class Product
 }
 ```
 
+##### Attributes
+
+Name | Description
+--- | ---
+targetEntity | Name of the entity to map
+cascade | Cascading fetch {"all"}
+fetch | LAZY or EAGER
+
 #### One to many
 ```php
 use Doctrine\ORM\Mapping as ORM;
@@ -557,6 +568,16 @@ class Category
     }
 }
 ```
+
+##### Attributes
+
+Name | Description
+--- | ---
+targetEntity | Name of the entity to map
+mappedBy | Property name to bind on the other side
+cascade | Cascading fetch {"persist", "remove", "merge"}
+fetch | LAZY, EXTRA_LAZY or EAGER
+indexBy | Index field name (if other than `id`)
 
 #### Many to Many
 
@@ -582,7 +603,16 @@ private $groups;
 private $features;
 ```
 
-> Note: Don't forget to execute `./bin/console doctrine:generate:entities AppBundle` command.
+##### Attributes
+
+Name | Description
+--- | ---
+targetEntity | Name of the entity to map
+mappedBy | Property name to bind on the other side
+inversedBy | Property name to bind on the other side
+cascade | Cascading fetch {"persist", "remove", "merge"}
+fetch | LAZY, EXTRA_LAZY or EAGER
+indexBy | Index field name (if other than `id`)
 
 ### Types of data
 
