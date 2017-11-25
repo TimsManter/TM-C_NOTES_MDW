@@ -44,3 +44,13 @@ dbus-send \
 --type=method_call \
 --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
 ```
+
+## LightDM
+
+### Troubleshooting
+
+#### `Failed to start Light Display Manager`
+```bash
+# ensure Intel video driver is installed
+sudo pacman -S xf86-video-intel
+```
