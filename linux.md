@@ -104,6 +104,9 @@ IgnoreGroup=groupname
 - `pacman -Qi pkgname` - show information from installed ones
 - `pacman -Qii pkgname` - add backup files and modify date
 - `pacman -Q` - list installed packages
+- `pacman -Qe` - list explicitly installed packages
+- `pacman -Qn` - list all native packages (from repository)
+- `pacman -Qm` - list all foreign packages (AUR or manually installed)
 - `pacman -Qo /path/to/file` - search package owner of the file
 - `pacman -Qdt` - list orphan packages
 - `pacman -Qem` - list packages from AUR
