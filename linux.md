@@ -58,6 +58,11 @@ dbus-send \
 # ensure Intel video driver is installed
 sudo pacman -S xf86-video-intel
 ```
+#### `Failed to add new printer` in Gnome Control Center
+```bash
+# just install Print Settings
+sudo pacman -S system-config-printer
+```
 
 ## Pacman
 
