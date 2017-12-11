@@ -63,6 +63,11 @@ sudo pacman -S xf86-video-intel
 # just install Print Settings
 sudo pacman -S system-config-printer
 ```
+#### `Could not open display` when using `sudo`
+```bash
+# to use sudo with GUI apps firs run
+xhost +local:
+```
 
 ## Pacman
 
