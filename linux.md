@@ -17,7 +17,6 @@ xdg-mime default transmission-gtk.desktop x-scheme-handler/magnet
 - [Audio Switcher](https://extensions.gnome.org/extension/1092/audio-switcher/)
 - [Backlight Control](https://extensions.gnome.org/extension/1293/backlight-control/)
 - [Bing Wallpaper Changer](https://extensions.gnome.org/extension/1262/bing-wallpaper-changer/)
-- [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
 - [Circular Battery Indicator](https://extensions.gnome.org/extension/1244/circular-battery-indicator/)
 - [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 - [Coverflow Alt-Tab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/)
