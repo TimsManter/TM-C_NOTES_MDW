@@ -58,8 +58,9 @@ TM-<type>[_<labs-name>[-<lab-no>]]_<code-name>[_<kind>][_<framework>][_<lang>][_
 > Note: If used and only the main one
 
 * WPS - WordPress
-* SYM - Symfony 2/3
-* ANG - AngularJS or Angular2+
+* SYM - Symfony
+* LRV - Laravel
+* ANG - AngularJS/Angular
 * VUE - Vue.js
 * REA - React
 * JQR - jQuery
