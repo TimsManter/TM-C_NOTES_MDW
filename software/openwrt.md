@@ -1,4 +1,4 @@
-# Lede
+# OpenWRT
 
 ## Overview
 

@@ -1,36 +1,36 @@
 # My private set of notes based on various documentations and guides
 
-## Language
+## Languages
 
-- [C#](c_sharp.md)
-- [Emmet](emmet.md)
-- [Lua](lua.md)
-- [Markdown](markdown.md)
-- [Python 3](python3.md)
-- [Sass/SCSS](scss.md)
-- [TypeScript](typescript.md)
-- [Vala](vala.md)
-- [Bash](bash.md)
+- [C#](languages/c_sharp.md)
+- [Emmet](languages/emmet.md)
+- [Lua](languages/lua.md)
+- [Markdown](languages/markdown.md)
+- [Python 3](languages/python3.md)
+- [Sass/SCSS](languages/scss.md)
+- [TypeScript](languages/typescript.md)
+- [Vala](languages/vala.md)
+- [Bash](languages/bash.md)
 
-## Framework
-- [React](react.md)
-- [Angular 2](angular2.md)
-- [Symfony 3](symfony.md)
-- [Vue.js](vuejs.md)
+## Frameworks
+- [React](frameworks/react.md)
+- [Angular 2](frameworks/angular2.md)
+- [Symfony 3](frameworks/symfony.md)
+- [Vue.js](frameworks/vuejs.md)
 
 ## Software
 
-- [Git](git.md)
-- [Lede/OpenWRT](lede.md)
-- [Nmap](nmap.md)
-- [systemd](systemd.md)
-- [Visual Studio Code](vs_code.md)
-- [Linux (Arch)](linux.md)
+- [Git](software/git.md)
+- [OpenWRT](software/openwrt.md)
+- [Nmap](software/nmap.md)
+- [systemd](software/systemd.md)
+- [Visual Studio Code](software/vs_code.md)
+- [Linux (Arch)](software/linux.md)
 
 ## Other
 
-- [Atmel AVR Registers](atmel_avr_registers.md)
-- [Data Dictionary](data_dictionary.md)
-- [Languages Comparison](languages_comparison.md)
-- [Projects Convention](projects_convention.md)
-- [Custom Shortcuts](custom_shortcuts.md)
+- [Atmel AVR Registers](other/atmel_avr_registers.md)
+- [Data Dictionary](other/data_dictionary.md)
+- [Languages Comparison](other/languages_comparison.md)
+- [Projects Convention](other/projects_convention.md)
+- [Custom Shortcuts](other/custom_shortcuts.md)
